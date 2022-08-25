@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="assets/Icon.svg" id="header_icon"/>
+            <span id="header_title">Unit Converter</span>
+        </header>
+        <div id="body_div">
+            <div id="unit_converter_div">
+                <div id="unit_converter_wrapper1">
+                    <span id="unit_converter_title">convert</span>
+                </div>
+                <div id="unit_converter_wrapper2">
+                    <div id="unit_converter_wrapper2_1">
+                        <select id="units_chosen" name="units_chosen" onchange="compute()">
+                            <option value="kmtomi">Kil&oacute;metros a millas</option>
+                            <option value="mitokm">Millas a kil&oacute;metros</option>
+                            <option value="fttom">Pies a metros</option>
+                            <option value="mtoft">Metros a pies</option>
+                            <option value="cmtoin">Cent&iacute;metros a pulgadas</option>
+                            <option value="intocm">Pulgadas a cent&iacute;metros</option>
+                        </select>
+                        <button id="switch_quantities" onclick="switcheroo()">
+                            <img src="assets/Icon.svg"/>
+                        </button>
+                    </div>
+                    <div id="unit_converter_wrapper2_2">
+                        <input type="number" name="quantity" id="quantity" value="0" onchange="compute()" onkeyup="compute()">
+                        <span id="unit_display">KM</span>
+                    </div>
+                </div>
+                <div id="unit_converter_wrapper3">
+                    <button id="fav_conversion" onclick="save()">
+                        &lt;3
+                    </button>
+                    <span id="result">0.00 millas</span>
+                </div>
+            </div>
+            <div id="saved_conversions">
+                <div id="saved_title">
+                    <span id="saved_title_span">Saved Conversions</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

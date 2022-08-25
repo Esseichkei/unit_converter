@@ -1,0 +1,91 @@
+body {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+header {
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+img {
+    vertical-align: middle;
+}
+#body_div {
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+#unit_converter_div {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 24px;
+    background-color: silver;
+    border-radius: 8px;
+    max-width: 749px;
+    min-width: 349px;
+    width: 80%;
+    min-height: 169px;
+    max-height: 185px;
+    height:20%;
+}
+#unit_converter_wrapper1 {
+    text-align:left;
+}
+#unit_converter_wrapper2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#unit_converter_wrapper3 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#saved_conversions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 749px;
+    min-width: 349px;
+    width: 80%;
+    min-height: 169px;
+}
+#saved_title {
+    text-align: left;
+    width: 100%;
+}
+.saved {
+    background-color: silver;
+    border-radius: 4px;
+    width:44%;
+    margin: 10px 2%;
+    padding: 1%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* this is for the layout change in mobile */
+
+@media screen and (max-width: 600px) {
+    #unit_converter_wrapper2 {
+        height: 15%;
+        min-height: 60px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .saved {
+        width: 94%;
+    }
+}
